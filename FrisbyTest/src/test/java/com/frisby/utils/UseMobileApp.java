@@ -1,4 +1,4 @@
-package com.example.frisby.screenplay.abilities;
+package com.frisby.utils;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;

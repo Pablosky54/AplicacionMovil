@@ -1,12 +1,12 @@
-package com.example.frisby.steps;
+package com.frisby.stepdefinitions;
 
-import com.example.frisby.drivers.AppiumDriverFactory;
-import com.example.frisby.screenplay.Actor;
-import com.example.frisby.screenplay.abilities.UseMobileApp;
-import com.example.frisby.screenplay.questions.ItemIsDisplayed;
-import com.example.frisby.screenplay.tasks.AddToCart;
-import com.example.frisby.screenplay.tasks.OpenTheApp;
-import com.example.frisby.screenplay.tasks.SearchItem;
+import com.frisby.drivers.AppiumDriverFactory;
+import com.frisby.utils.Actor;
+import com.frisby.utils.UseMobileApp;
+import com.frisby.questions.ItemIsDisplayed;
+import com.frisby.tasks.AddToCart;
+import com.frisby.tasks.OpenTheApp;
+import com.frisby.tasks.SearchItem;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -60,8 +60,6 @@ public class FrisbyStepDefinitions {
 
     @Then("el carrito debería contener {string}")
     public void el_carrito_debería_contener(String producto) {
-        // Placeholder: aquí deberías implementar un Question que verifique el carrito
-        // Por simplicidad reusamos ItemIsDisplayed (ajusta según tu app)
         boolean visible = ItemIsDisplayed.called(producto).answeredBy(actor);
         assertTrue("Se esperaba que el carrito contenga: " + producto, visible);
     }

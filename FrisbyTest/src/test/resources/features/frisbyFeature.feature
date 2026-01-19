@@ -6,13 +6,13 @@ Feature: Automatización de Frisby
     Given que el actor "Pablo" abre la aplicación
 
   Scenario: Buscar un producto existente
-    When busca el producto "Donas de fresa"
-    Then debería ver el resultado "Donas de fresa"
+    When busca el producto "Cuarto Frisby Arepas"
+    Then debería ver el resultado "Cuarto Frisby Arepas"
 
   Scenario: Agregar producto al carrito
-    When busca el producto "Donas de chocolate"
+    When busca el producto "Pollo Frisby Arepas"
     And agrega el producto al carrito
-    Then el carrito debería contener "Donas de chocolate"
+    Then el carrito debería contener "Pollo Frisby Arepas"
 
   Scenario Outline: Búsqueda parametrizada
     When busca el producto "<producto>"
@@ -20,5 +20,5 @@ Feature: Automatización de Frisby
 
     Examples:
       | producto          |
-      | Donas mixtas      |
-      | Donas glaseadas   |
+      | Medio Frisby BBQ arepas      |
+      | Pollo Frisby BBQ francesa   |

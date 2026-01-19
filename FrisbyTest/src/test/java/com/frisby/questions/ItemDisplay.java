@@ -1,7 +1,7 @@
-package com.example.frisby.screenplay.questions;
+package com.frisby.questions;
 
-import com.example.frisby.screenplay.Actor;
-import com.example.frisby.screenplay.abilities.UseMobileApp;
+import com.frisby.utils.Actor;
+import com.frisby.utils.UseMobileApp;
 
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;

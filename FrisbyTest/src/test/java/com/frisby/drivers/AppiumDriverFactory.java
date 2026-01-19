@@ -1,4 +1,4 @@
-package com.example.frisby.drivers;
+package com.frisby.drivers;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;

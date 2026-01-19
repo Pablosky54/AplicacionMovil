@@ -14,15 +14,21 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'net.serenity-bdd:serenity-core:3.6.0'
-    testImplementation 'net.serenity-bdd:serenity-junit:3.6.0'
-    testImplementation 'net.serenity-bdd:serenity-screenplay:3.6.0'
-    testImplementation 'net.serenity-bdd:serenity-screenplay-webdriver:3.6.0'
-    testImplementation 'net.serenity-bdd:serenity-cucumber:3.6.0'
-    testImplementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
-    testImplementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
-    testImplementation 'io.cucumber:cucumber-java:7.13.0'
-    testImplementation 'io.cucumber:cucumber-junit:7.13.0'
+    // Serenity BDD
+    implementation 'net.serenity-bdd:serenity-core:3.6.0'
+    implementation 'net.serenity-bdd:serenity-junit:3.6.0'
+    implementation 'net.serenity-bdd:serenity-screenplay:3.6.0'
+    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:3.6.0'
+    implementation 'net.serenity-bdd:serenity-cucumber:3.6.0'
+
+    // WebDriver
+    implementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
+
+    // Cucumber
+    implementation 'io.cucumber:cucumber-java:7.13.0'
+
+    // JUnit
     testImplementation 'junit:junit:4.13.2'
 }
 
@@ -34,4 +40,8 @@ test {
 serenity {
     testRoot = "com.frisby.runners"
     requirementsDir = "src/test/resources/features"
+}
+
+tasks.withType(Test) {
+    systemProperty 'cucumber.filter.tags', System.getProperty('cucumber.filter.tags', '')
 }

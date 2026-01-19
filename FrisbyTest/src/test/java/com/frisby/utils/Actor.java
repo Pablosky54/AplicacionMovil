@@ -1,4 +1,4 @@
-package com.example.frisby.screenplay;
+package com.frisby.utils;
 
 import java.util.HashMap;
 import java.util.Map;
