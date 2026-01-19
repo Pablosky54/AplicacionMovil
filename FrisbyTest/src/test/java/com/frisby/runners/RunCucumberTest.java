@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = {"com.example.frisby.steps"},
+        glue = {"com.frisby.steps"},
         plugin = {"pretty"}
 )
 public class RunCucumberTest { }
