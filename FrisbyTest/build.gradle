@@ -1,0 +1,37 @@
+﻿plugins {
+    id 'java'
+    id 'net.serenity-bdd.serenity-gradle-plugin' version '3.6.0'
+}
+
+group = 'com.frisby'
+version = '1.0.0'
+
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'net.serenity-bdd:serenity-core:3.6.0'
+    testImplementation 'net.serenity-bdd:serenity-junit:3.6.0'
+    testImplementation 'net.serenity-bdd:serenity-screenplay:3.6.0'
+    testImplementation 'net.serenity-bdd:serenity-screenplay-webdriver:3.6.0'
+    testImplementation 'net.serenity-bdd:serenity-cucumber:3.6.0'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
+    testImplementation 'io.cucumber:cucumber-java:7.13.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.13.0'
+    testImplementation 'junit:junit:4.13.2'
+}
+
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
+
+serenity {
+    testRoot = "com.frisby.runners"
+    requirementsDir = "src/test/resources/features"
+}
