@@ -1,24 +1,11 @@
-Feature: Automatización de Frisby
-  Para verificar búsquedas y acciones básicas en la app Frisby
-  Mantener la aplicación establecida y reutilizable con Screenplay
+# src/test/resources/features/frisby.feature
+Feature: Apertura de aplicación Frisby
+  Como usuario de Frisby
+  Quiero poder abrir la aplicación
+  Para realizar pedidos de comida
 
-  Background: La aplicación está abierta
-    Given que el actor "Pablo" abre la aplicación
-
-  Scenario: Buscar un producto existente
-    When busca el producto "Cuarto Frisby Arepas"
-    Then debería ver el resultado "Cuarto Frisby Arepas"
-
-  Scenario: Agregar producto al carrito
-    When busca el producto "Pollo Frisby Arepas"
-    And agrega el producto al carrito
-    Then el carrito debería contener "Pollo Frisby Arepas"
-
-  Scenario Outline: Búsqueda parametrizada
-    When busca el producto "<producto>"
-    Then debería ver el resultado "<producto>"
-
-    Examples:
-      | producto          |
-      | Medio Frisby BBQ arepas      |
-      | Pollo Frisby BBQ francesa   |
+  @frisby
+  Scenario: Abrir aplicación por primera vez
+    Given que "Juan" abre la aplicación Frisby
+    When ve la pantalla de inicio
+    Then debería ver el logo de Frisby

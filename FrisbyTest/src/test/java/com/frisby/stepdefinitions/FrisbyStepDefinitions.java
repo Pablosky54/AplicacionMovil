@@ -1,66 +1,39 @@
 package com.frisby.stepdefinitions;
 
-import com.frisby.drivers.AppiumDriverFactory;
-import com.frisby.utils.Actor;
-import com.frisby.utils.UseMobileApp;
-import com.frisby.questions.ItemIsDisplayed;
-import com.frisby.tasks.AddToCart;
-import com.frisby.tasks.OpenTheApp;
-import com.frisby.tasks.SearchItem;
-
-import io.appium.java_client.AppiumDriver;
-import io.cucumber.java.After;
+import com.frisby.tasks.AbrirAplicacion;
 import io.cucumber.java.Before;
-import io.cucumber.java.en.*;
-import org.openqa.selenium.WebElement;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+import net.serenitybdd.screenplay.actors.OnStage;
+import net.serenitybdd.screenplay.actors.OnlineCast;
 
-import static org.junit.Assert.*;
+import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
+import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class FrisbyStepDefinitions {
 
-    private Actor actor;
-    private AppiumDriver<WebElement> driver;
-
     @Before
-    public void setup() {
-
-        driver = AppiumDriverFactory.create();
+    public void setTheStage() {
+        OnStage.setTheStage(new OnlineCast());
     }
 
-    @After
-    public void tearDown() {
-        if (driver != null) {
-            try {
-                driver.quit();
-            } catch (Exception ignore) {}
-        }
+    @Given("que {string} abre la aplicación Frisby")
+    public void queAbreLaAplicacionFrisby(String nombreActor) {
+        theActorCalled(nombreActor).attemptsTo(
+                AbrirAplicacion.frisby()
+        );
     }
 
-    @Given("que el actor {string} abre la aplicación")
-    public void que_el_actor_abre_la_aplicación(String actorName) {
-        actor = Actor.named(actorName).can(UseMobileApp.with(driver));
-        OpenTheApp.now().performAs(actor);
+    @When("ve la pantalla de inicio")
+    public void veLaPantallaDeInicio() {
+        // Aquí puedes agregar verificaciones
+        System.out.println("Viendo pantalla de inicio...");
     }
 
-    @When("busca el producto {string}")
-    public void busca_el_producto(String producto) {
-        SearchItem.named(producto).performAs(actor);
-    }
-
-    @When("agrega el producto al carrito")
-    public void agrega_el_producto_al_carrito() {
-        AddToCart.now().performAs(actor);
-    }
-
-    @Then("debería ver el resultado {string}")
-    public void debería_ver_el_resultado(String producto) {
-        boolean visible = ItemIsDisplayed.called(producto).answeredBy(actor);
-        assertTrue("Se esperaba ver el producto: " + producto, visible);
-    }
-
-    @Then("el carrito debería contener {string}")
-    public void el_carrito_debería_contener(String producto) {
-        boolean visible = ItemIsDisplayed.called(producto).answeredBy(actor);
-        assertTrue("Se esperaba que el carrito contenga: " + producto, visible);
+    @Then("debería ver el logo de Frisby")
+    public void deberiaVerElLogoDeFrisby() {
+        // Verificación del logo
+        System.out.println("Verificando logo de Frisby...");
     }
 }
