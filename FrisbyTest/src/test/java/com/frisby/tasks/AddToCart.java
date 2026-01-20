@@ -1,12 +1,12 @@
-package com.frisby,tasks;
+package com.frisby.tasks;
 
-import com.example.frisby.screenplay.Actor;
-import com.example.frisby.screenplay.abilities.UseMobileApp;
+import com.frisby.utils.Actor;
+import com.frisby.utils.UseMobileApp;
 
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 
-public class AddToCart implements Task {
+public class AddToCart implements com.frisby.Task {
 
     public static AddToCart now() {
         return new AddToCart();

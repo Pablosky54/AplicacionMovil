@@ -1,9 +1,9 @@
-package com.frisby,tasks;
+package com.frisby.tasks;
 
-import com.example.frisby.screenplay.Actor;
-import com.example.frisby.screenplay.abilities.UseMobileApp;
+import com.frisby.utils.Actor;
+import com.frisby.utils.UseMobileApp;
 
-import io.appium.java_client.MobileElement;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 
 public class SearchItem implements Task {
@@ -23,12 +23,12 @@ public class SearchItem implements Task {
 
         try {
 
-            MobileElement searchBox = ability.getDriver().findElement(By.id("com.frisby.app:id/search_box"));
+            WebElement  searchBox = ability.getDriver().findElement(By.id("com.frisby.app:id/search_box"));
             searchBox.click();
             searchBox.clear();
             searchBox.sendKeys(itemName);
 
-            MobileElement searchButton = ability.getDriver().findElement(By.id("com.frisby.app:id/search_button"));
+            WebElement  searchButton = ability.getDriver().findElement(By.id("com.frisby.app:id/search_button"));
             searchButton.click();
 
         } catch (Exception e) {

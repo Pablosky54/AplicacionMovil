@@ -1,7 +1,7 @@
-package com.frisby,tasks;
+package com.frisby.tasks;
 
-import com.example.frisby.screenplay.Actor;
-import com.example.frisby.screenplay.abilities.UseMobileApp;
+import com.frisby.utils.Actor;
+import com.frisby.utils.UseMobileApp;
 
 public class OpenTheApp implements Task {
 
