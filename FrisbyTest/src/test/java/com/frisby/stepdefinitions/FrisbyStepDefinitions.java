@@ -9,17 +9,17 @@ import com.frisby.tasks.OpenTheApp;
 import com.frisby.tasks.SearchItem;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
+import org.openqa.selenium.WebElement;
 
 import static org.junit.Assert.*;
 
 public class FrisbyStepDefinitions {
 
     private Actor actor;
-    private AppiumDriver<MobileElement> driver;
+    private AppiumDriver<WebElement> driver;
 
     @Before
     public void setup() {
