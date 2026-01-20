@@ -17,15 +17,14 @@ public class AbrirAplicacion implements Task {
     @Step("{0} abre la aplicación Frisby")
     @Override
     public <T extends Actor> void performAs(T actor) {
-        // El driver ya se inicializa automáticamente con Serenity
-        // Solo verificamos que la app esté abierta
+
         AppiumDriver driver = (AppiumDriver) BrowseTheWeb.as(actor).getDriver();
 
-        // Verificar que la app está corriendo
-        String currentActivity = driver.currentActivity();
-        System.out.println("Actividad actual: " + currentActivity);
 
-        // Esperar un momento para que cargue
+        //String currentActivity = driver.currentActivity();
+        //System.out.println("Actividad actual: " + currentActivity);
+
+
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

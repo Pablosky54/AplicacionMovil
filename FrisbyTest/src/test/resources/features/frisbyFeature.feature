@@ -1,4 +1,3 @@
-# src/test/resources/features/frisby.feature
 Feature: Apertura de aplicación Frisby
   Como usuario de Frisby
   Quiero poder abrir la aplicación
