@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="530fe77d-f962-41ea-a362-53425cf0af92" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitgnore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitgnore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/serenity.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/serenity.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/drivers/AppiumDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/drivers/AppiumDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/questions/ItemDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/questions/ItemDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/runners/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/runners/RunCucumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/stepdefinitions/FrisbyStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/stepdefinitions/FrisbyStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/tasks/AddToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/tasks/AddToCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/tasks/OpenApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/tasks/OpenApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/tasks/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/tasks/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/tasks/searchItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/tasks/searchItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/utils/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/utils/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/utils/UseMobileApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/src/test/java/com/frisby/utils/UseMobileApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrisbyTest/src/test/resources/features/frisbyFeature.feature" beforeDir="false" afterPath="$PROJECT_DIR$/FrisbyTest/src/test/resources/features/frisbyFeature.feature" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="38SnJZ05JjG0HQro6wN0R9FrxoC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "test/v1",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/AplicacionMovil",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="530fe77d-f962-41ea-a362-53425cf0af92" name="Changes" comment="" />
+      <created>1768801773485</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768801773485</updated>
+      <workItem from="1768801776547" duration="6235000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
